@@ -17,7 +17,7 @@ def app():
     st.markdown("<h1 style='text-align: center; color: #00698f;'>Fashion Objects Detection - Mukesh Potnuru</h1>", unsafe_allow_html=True)  
     st.markdown("<h2 style='text-align: center; color: #00698f;'>Powered by YOLOv8</h2>", unsafe_allow_html=True)  
 
-    model = YOLO('yolov8l.pt')  
+    model = YOLO('best.pt')  
     object_names = list(model.names.values())  
 
     col1, col2 = st.columns(2)  
